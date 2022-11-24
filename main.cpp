@@ -11,7 +11,7 @@ int main() {
     string sourceFile = "filename.txt"; //Change this to the name of your file and write what you are looking for
     string searchFile = "filename.txt"; //Change this to the name of your file and write what you are looking for
     ifstream sourceFileStream(sourceFile);
-    ifstream searchFileStream(sourceFile);
+    ifstream searchFileStream(searchFile);
 
     if (sourceFileStream.is_open()) {
         while (getline(sourceFileStream, line)) {
